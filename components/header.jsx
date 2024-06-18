@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { Button } from "./ui/button"
+import Nav from "./Nav"
+
 const header = () => {
   return (
     
@@ -8,11 +10,12 @@ const header = () => {
         
         {/* logo */}
         <Link href="/">
-            <h1>
-                Jaiwin <span>.</span>
+            <h1 className="text-4xl font-semibold">
+                Jaiwin <span className="text-accent">.</span>
             </h1>
         </Link>
-        
+        {/* desktop nav */}
+        <Nav />
         </div>
     </header>
   )
