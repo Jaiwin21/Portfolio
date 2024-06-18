@@ -30,7 +30,7 @@ module.exports = {
           DEFAULT: "#00ff99",
           hover: "#00e187",
         }
-      }
+      },
 
       keyframes: {
         "accordion-down": {
