@@ -10,12 +10,12 @@ const stairAnimation = {
     exit: {
         top: ["100%", "0%"],
     },
-}
+};
 
 const reverseIndex = (index) => {
     const totalSteps = 6;
     return totalSteps - index - 1;
-}
+};
 
 const Stairs = () => {
     return (
@@ -33,7 +33,12 @@ const Stairs = () => {
                             ease: "easeInOut",
                             delay: reverseIndex(index) * 0.1,
                         }}
-                        className="h-full w-full bg-white relative"
+                        style={{
+                            height: "100%",
+                            width: "100%",
+                            backgroundColor: "rgb(0, 255, 153)",
+                            position: "relative"
+                        }}
                     />
                 );
             })}
