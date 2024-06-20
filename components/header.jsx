@@ -6,7 +6,7 @@ const header = () => {
   return (
     
     <header className="py-8 xl:py-12 text-white">
-        <div className="container mx-auto">
+        <div className="container mx-auto flex justify-between items-center">
         
         {/* logo */}
         <Link href="/">
@@ -14,8 +14,16 @@ const header = () => {
                 Jaiwin <span className="text-accent">.</span>
             </h1>
         </Link>
-        {/* desktop nav */}
+        {/* desktop nav & Contact button*/}
+        <div className="hidden xl:flex items-center gap-8">
         <Nav />
+        <Link href="/contact">
+        <Button>Contact</Button>
+        </Link>
+        </div>
+
+        <div className="xl:hidden">mobile nav</div>
+        
         </div>
     </header>
   )
