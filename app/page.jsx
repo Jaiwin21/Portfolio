@@ -14,6 +14,17 @@ const Home = () => {
           <p className="max-w-[500px] mb-9 text-white/80">
             Up and coming software engineering graduate who is seeking to leverage their knowledge with industry experience.
           </p>
+          <div className="flex flex-col xl:flex-row items-center gap-8">
+            <Button
+            variant="outline"
+            size="lg"
+            className="uppercase flex items-center gap-2"
+            >
+              <span>Download CV</span>
+              <FiDownload className="text-xl" />
+            </Button>
+            <div>socials</div>
+          </div>
         </div>
         <div>photo</div>
       </div>  
