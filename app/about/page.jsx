@@ -7,9 +7,10 @@ import {
   FaReact,
   FaNodeJs,
   FaJava,
+  FaPython,
 } from "react-icons/fa";
 
-import {SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {SiTailwindcss, SiNextdotjs, SiTypescript, SiSpringboot } from "react-icons/si";
 
 const about = {
   title: "About me",
@@ -87,7 +88,7 @@ const education = {
     },
     {
       institution: "The University Of Northampton",
-      degree: "Computing (Software Engineering) (HND)",
+      degree: "(HND) Computing (Software Engineering)",
       duration: "2019 - 2021",
     },
     {
@@ -95,6 +96,55 @@ const education = {
       degree: "National Diploma",
       duration: "2017 - 2019",
     },
+  ]
+};
+
+const skills = {
+  title: "My skills",
+  description: "I am constantly expanding my repertoire. Occupying myself in a project which utilises the technology, I wish to learn, has shown me the best results when learning new skills. Online courses are also great to master the basics.",
+  skillList: [
+    
+    {
+      icon: <SiSpringboot />,
+      name: "Springboot",
+    },
+    {
+      icon: <FaCss3 />,
+      name: "CSS 3",
+    },
+    {
+      icon: <FaJs />,
+      name: "JavaScript",
+    },
+    {
+      icon: <FaReact />,
+      name: "React",
+    },
+    {
+      icon: <FaNodeJs />,
+      name: "NodeJs",
+    },
+    {
+      icon: <FaJava />,
+      name: "Java",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <SiTailwindcss />,
+      name: "Tailwind CSS",
+    },
+    {
+      icon: <SiNextdotjs />,
+      name: "NextJs",
+    },
+    {
+      icon: <SiSpringboot />,
+      name: "Springboot",
+    },
+    
   ]
 };
 
