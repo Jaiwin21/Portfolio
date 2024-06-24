@@ -40,6 +40,40 @@ const about = {
 }
 
 
+const experience = {
+  icon: "/resume/badge.svg",
+  title: "My experinece",
+  description: "test",
+  items: [
+    
+    {
+      company: "Phipps Henson McAllister",
+      Position: "Software Engineer",
+      duration: "Sept 2023 - Jan 2024",
+    },
+    {
+      company: "Phipps Henson McAllister",
+      Position: "Aritifial Intelligence Intern",
+      duration: "Jul 2023 - Sept 2023",
+    },
+    {
+      company: "Triad",
+      Position: "Software Engineer",
+      duration: "Feb 2024",
+    },
+    {
+      company: "Barclays",
+      Position: "Software Engineer",
+      duration: "Apr 2023",
+    },
+    {
+      company: "The Access Group",
+      Position: "Software Engineer",
+      duration: "Mar 2023",
+    }
+  ]
+}
+
 const About = () => {
   return (
     <div>about page</div>
