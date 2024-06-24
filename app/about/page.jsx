@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  FaHtml5,
   FaCss3,
   FaJs,
   FaReact,
@@ -14,7 +13,7 @@ import {SiTailwindcss, SiNextdotjs, SiTypescript, SiSpringboot, SiAmazonaws  } f
 
 const about = {
   title: "About me",
-  description: "I am recent software engineering graduate who is seeking to make real world impact through contributions in industry. I am an avid tech geek who keeps up to date in what is going on around the world which is tech related. May it be a new library, framework or AI model, I am keen to learn more about it and its usecase.",
+  description: "I am recent software engineering graduate who is seeking to make real world impact through my own contributions in industry. I am an avid tech geek who keeps up to date in what is going on around the world that is related to tech. May it be a new library, framework or AI model, I am keen to learn more about it and its usecase in order to improve the quality of products I build.",
   info: [
       {
       fieldName: "Name",
@@ -25,16 +24,20 @@ const about = {
       fieldValue: "+44 7475567756" 
     },
     {
-      fieldName: "Email",
-      fieldValue: "Jaiwinprince21@hotmail.com" 
-    },
-    {
       fieldName: "Nationality",
       fieldValue: "British" 
     },
     {
+      fieldName: "Email",
+      fieldValue: "Jaiwinprince21@hotmail.com" 
+    },
+    {
       fieldName: "Languages",
-      fieldValue: "English, Tamil, French" 
+      fieldValue: "English Tamil French" 
+    },
+    {
+      fieldName: "Location",
+      fieldValue: "England, UK" 
     },
 ]
 
@@ -44,7 +47,7 @@ const about = {
 const experience = {
   icon: "/resume/badge.svg",
   title: "My experience",
-  description: "I have had the pleasure of working closely alongside a handful of amazing companies and have learned a lot from fellow colleagues and staff. Some notable experiences include: Phipps Henson McAllister, one of the largest Accounting firms in the midlands. Barclays - one of the big 4 in the UK when it comes to banking. Triad - who work very closely with the government to deliver excellent nationwide services. The Access Group - one of the largest software firms operating in the UK. I also served as the student representative of all Year 1 & Year 2 software engineering, after being elected, near the beginning of my tenure at The University Of Northampton.",
+  description: "I have had the pleasure of working closely alongside a handful of leading companies and have learned a lot from fellow colleagues and staff. Some notable experiences include: Phipps Henson McAllister - One of the largest Accounting firms in the midlands. Barclays - Renowned as one of the big 4 in the UK when it comes to banking. Triad plc - Who work very closely with the government to deliver excellent services nationwide. The Access Group - One of the largest software firms currently operating in the UK. I also served as the student representative of all Year 1 & Year 2 software engineering students, after being elected near the beginning of my tenure, at The University Of Northampton.",
   items: [
     
     {
@@ -179,7 +182,7 @@ const About = () => {
     >
       <div className="container mx-auto">
         <Tabs
-        defaultValue="experience"
+        defaultValue="about"
         className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6" >
@@ -192,8 +195,24 @@ const About = () => {
           <div className="min-h-[70vh] w-full">
             
           {/* About me content */}
-          <TabsContent value="about" className="w-full">
-            about
+          <TabsContent value="about" className="w-full text-center xl:text-left">
+            <div className="flex flex-col gap-[30px]">
+              <h3 className="text-4xl font-bold">{about.title}</h3>
+              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+              <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[1000px] mx-auto xl:mx-0">
+                {about.info.map((item, index) => {
+                  return (
+                    <li 
+                    key={index}
+                    className="flex items-center justify-center xl:justify-start gap-4"
+                    >  
+                      <span className="text-white/60">{item.fieldName}</span>
+                      <span className="text-xl">{item.fieldValue}</span>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
           </TabsContent>
 
           {/* Education Content */}
@@ -212,7 +231,7 @@ const About = () => {
                       <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
                       <div className="flex items-center gap-3">
                         <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                        <p className="text-white/60">{item.institution}</p>
+                        <p className="text-white/60 text-sm">{item.institution}</p>
                       </div>
                     </li>
                     );
