@@ -72,7 +72,31 @@ const experience = {
       duration: "Mar 2023",
     }
   ]
-}
+};
+
+const education = {
+  icon: "/resume/cap.svg",
+  title: "My education",
+  description: "test",
+  items: [
+    
+    {
+      institution: "The University Of Northampton",
+      degree: "BSc (Hons) Computing (Software Engineering)",
+      duration: "2021 - 2024",
+    },
+    {
+      institution: "The University Of Northampton",
+      degree: "Computing (Software Engineering) (HND)",
+      duration: "2019 - 2021",
+    },
+    {
+      institution: "St. Pauls Catholic School",
+      degree: "National Diploma",
+      duration: "2017 - 2019",
+    },
+  ]
+};
 
 const About = () => {
   return (
