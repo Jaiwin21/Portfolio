@@ -148,7 +148,7 @@ const skills = {
   ]
 };
 
-import { Tabs, TabContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
@@ -176,7 +176,13 @@ const About = () => {
             <TabsTrigger value="skills">Skills</TabsTrigger>
           </TabsList>
 
-          <div>content</div>
+          <div className="min-h-[70vh] w-full">
+            
+          <TabsContent value="experience" className="w-full">
+
+          </TabsContent>
+
+          </div>
 
         </Tabs>
       </div>
