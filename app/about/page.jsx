@@ -44,7 +44,7 @@ const about = {
 const experience = {
   icon: "/resume/badge.svg",
   title: "My experience",
-  description: "I have had the pleasure of working closely alongside a handful of amazing companies and have learned a lot from fellow colleagues and staff. Some notable companies are: Phipps Henson McAllister, one of the largest Accounting firms in the midlands. Barclays - one of the big 4 in the UK when it comes to banking. Triad - who work very closely with the government to deliver excellent nationwide services. The Access Group - one of the largest software firms operating in the UK.",
+  description: "I have had the pleasure of working closely alongside a handful of amazing companies and have learned a lot from fellow colleagues and staff. Some notable experiences include: Phipps Henson McAllister, one of the largest Accounting firms in the midlands. Barclays - one of the big 4 in the UK when it comes to banking. Triad - who work very closely with the government to deliver excellent nationwide services. The Access Group - one of the largest software firms operating in the UK. I also served as the student representative of all Year 1 & Year 2 software engineering, after being elected, near the beginning of my tenure at The University Of Northampton.",
   items: [
     
     {
@@ -59,21 +59,21 @@ const experience = {
     },
     {
       company: "Triad",
-      Position: "Software Engineer",
+      Position: "Software Engineer Workshop",
       duration: "Feb 2024",
     },
     {
       company: "Barclays",
-      Position: "Software Engineer",
+      Position: "Software Engineer Workshop",
       duration: "Apr 2023",
     },
     {
       company: "The Access Group",
-      Position: "Software Engineer",
+      Position: "Software Engineer Workshop",
       duration: "Mar 2023",
     },
     {
-      company: "The University Of Northampton",
+      company: "UON",
       Position: "Student Representative",
       duration: "Oct 2019 - July 2021",
     }
@@ -183,14 +183,17 @@ const About = () => {
 
           <div className="min-h-[70vh] w-full">
             
+          {/* About me content */}
           <TabsContent value="about" className="w-full">
             about
           </TabsContent>
 
+          {/* Education Content */}
           <TabsContent value="education" className="w-full">
             education
           </TabsContent>
-
+          
+          {/* Experience content */}
           <TabsContent value="experience" className="w-full">
             <div className=" flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{experience.title}</h3>
@@ -202,11 +205,11 @@ const About = () => {
                     <li key={index}
                     className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                     >
-                      <span>{item.duration}</span>
-                      <h3>{item.Position}</h3>
-                      <div>
-                        <span></span>
-                        <p>{item.company}</p>
+                      <span className="text-accent">{item.duration}</span>
+                      <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.Position}</h3>
+                      <div className="flex items-center gap-3">
+                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                        <p className="text-white/60">{item.company}</p>
                       </div>
                     </li>
                     );
@@ -216,7 +219,8 @@ const About = () => {
               </ScrollArea>
             </div>
           </TabsContent>
-
+          
+          {/* Skills content */}
           <TabsContent value="skills" className="w-full">
             skills
           </TabsContent>
