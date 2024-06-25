@@ -29,15 +29,15 @@ const projects = [
     github:"https://github.com/Jaiwin21/Ripple",
   },
   // {
-  //   num:"01",
+  //   num:"02",
   //   category:"frontend",
-  //   title:"project 1",
+  //   title:"project 2",
   //   description:"Ripple is a social media platform that mimics the likeness of Twitter. However, unlike Twitter, it aims to improve the quality of what is being posted as well as utilising AI to ensure the user is permitted to explore the platform. So far, the frontend is the only part that is complete.",
   //   stack: [{name:"HTML 5"}, {name:"Tailwind"}, {name:"React"}, {name:"NodeJs"}],
   //   image:"public/ripple.png",
   //   live:"",
   //   github:"https://github.com/Jaiwin21/Ripple",
-  // }
+  // },
   // {
   //   num:"01",
   //   category:"frontend",
@@ -52,6 +52,13 @@ const projects = [
 
 const work = () => {
   const [project, setProject] = useState(projects[0]);
+
+
+  const handleSlideChange = (swiper) => {
+    const currentIndex = swiper.activeIndex;
+    setProject(projects[currentIndex]);
+  };
+
   return (
     <motion.section
     initial={{opacity:0}}
@@ -105,6 +112,7 @@ const work = () => {
             spaceBetween={30}
             slidesPerView={1}
             className="xl:h-[520px] mb-12"
+            onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
                 return (
