@@ -13,7 +13,7 @@ import {SiTailwindcss, SiNextdotjs, SiTypescript, SiSpringboot, SiAmazonaws  } f
 
 const about = {
   title: "About me",
-  description: "I am recent software engineering graduate who is seeking to make real world impact through my own contributions in industry. I am an avid tech geek who keeps up to date in what is going on around the world that is related to tech. May it be a new library, framework or AI model, I am keen to learn more about it and its usecase in order to improve the quality of products I build.",
+  description: "I am recent software engineering graduate who is seeking to make real world impact through my own contributions in industry. I am an avid tech geek who indulges in any new technology that may arise in the field. May it be a new library, framework or AI model, I am keen to learn more about it and its usecase, in order to improve the quality of products I build.",
   info: [
       {
       fieldName: "Name",
@@ -86,7 +86,7 @@ const experience = {
 const education = {
   icon: "/resume/cap.svg",
   title: "My education",
-  description: "I have always knew I wanted to delve into tech from a pretty young age, going all the way back to GCSE's. As time went on, I begun to focus in on specialising in software engineering more and more.",
+  description: "I have always knew I wanted to delve into tech from a pretty young age, going all the way back to GCSE's. As time went on, I begun to focus on specialising in software engineering more and more.",
   items: [
     
     {
@@ -109,7 +109,7 @@ const education = {
 
 const skills = {
   title: "My skills",
-  description: "I am constantly expanding my repertoire. Occupying myself in a project, which utilises the technology I wish to learn, has shown me the best results when learning new skills. I am more of a practical and hands-on learner. Online courses are also great to master the basics.",
+  description: "I am constantly expanding my repertoire. Occupying myself in a project, which utilises the technology I wish to learn. This has shown me the best results when it comes to learning new skills. I am more of a practical and hands-on learner. Online courses are also great to master the basics.",
   skillList: [
     
     {
