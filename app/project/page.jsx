@@ -61,7 +61,7 @@ const work = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div>
+            <div className="flex flex-col gap-[30px] h-[50%]">
             <div
               className="text-8xl leading-none font-extrabold"
               style={{
@@ -84,15 +84,15 @@ const work = () => {
                 })}
               </ul>
               <div className="border border-white/20"></div>
-              <div>
-                <Link href={project.github}>
+              <div className="flex items-center gap-4">
+                <Link href={project.github} target="_blank" rel="noopener noreferrer">
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
-                    <TooltipTrigger>
-                      <BsArrowUpRight />
+                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                      <BsGithub className="text-white text-3xl group-hover:text-accent" />
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>Live Project</p>
+                      <p>Github Repository</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
@@ -100,7 +100,19 @@ const work = () => {
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-[50%] ">slider</div>
+          <div className="w-full xl:w-[50%]">
+            <Swiper
+            spaceBetween={30}
+            slidesPerView={1}
+            className="xl:h-[520px] mb-12"
+            >
+              {projects.map((project, index) => {
+                return (
+                  <SwiperSlide key={index}>slide</SwiperSlide>
+                )
+              })}
+            </Swiper>
+          </div>
         </div>
       </div>
     </motion.section>
