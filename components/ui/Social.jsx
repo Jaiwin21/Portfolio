@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 const socials = [
     { icon: <FaGithub />, path: "https://github.com/Jaiwin21" },
     { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/jaiwinprince" },
-    { icon: <FaYoutube />, path: "https://youtube.com" }, // Update this with your actual YouTube link
+    // { icon: <FaYoutube />, path: "https://youtube.com" }, // Update this with your actual YouTube link
 ];
 
 const Social = ({ containerStyles, iconStyles }) => {
