@@ -52,7 +52,7 @@ const Contact = () => {
     <div className="xl:w-[54%] order-2 xl:order-none">
       <form className="flex flex-col gap-6 py-10 bg-[#27272c] rounded-xl">
         <h3 className="text-4xl text-accent p-4">Let's work together</h3>
-        <p className="text-white/60 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti omnis, fugiat maiores inventore.</p>
+        <p className="text-white/60 p-4">Want to get in touch? Feel free to send an email! More than happy to answer any questions, discuss new opportunities or arrange a call.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
           <Input type="text" placeholder="Firstname"/>
           <Input type="text" placeholder="Lastname"/>
@@ -69,7 +69,7 @@ const Contact = () => {
               <SelectGroup>
                 <SelectLabel>Reason for contacting</SelectLabel>
                 <SelectItem value="est">Query</SelectItem>
-                <SelectItem value="cst">New opportunity</SelectItem>
+                <SelectItem value="cst">Exciting opportunity</SelectItem>
                 <SelectItem value="mst">Other</SelectItem>
               </SelectGroup>
             </SelectContent>
