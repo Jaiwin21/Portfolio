@@ -47,7 +47,7 @@ const about = {
 const experience = {
   icon: "/resume/badge.svg",
   title: "My experience",
-  description: "I have had the pleasure of working closely alongside a handful of leading companies and have learned a lot from fellow colleagues and staff. Some notable experiences include: Phipps Henson McAllister - One of the largest Accounting firms in the midlands. Barclays - Renowned as one of the big 4 in the UK when it comes to banking. Triad plc - Who work very closely with the government to deliver excellent services nationwide. The Access Group - One of the largest software firms currently operating in the UK. I also served as the student representative of all Year 1 & Year 2 software engineering students, after being elected near the beginning of my tenure, at The University Of Northampton.",
+  description: "I have had the pleasure of working under the tutelage of industry leading profesionals. Some notable experiences include: Phipps Henson McAllister - One of the largest Accounting firms in the midlands. Barclays - Renowned as one of the big 4 in the UK from the banking sector. Triad plc - Who work very closely with the government to deliver excellent services nationwide. The Access Group - One of the largest software firms currently operating in the UK. I also served as the student representative of all Year 1 & Year 2 software engineering students, after being elected near the beginning of my tenure, at The University Of Northampton.",
   items: [
     
     {

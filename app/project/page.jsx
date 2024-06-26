@@ -51,7 +51,7 @@ const projects = [
   // }
 ]
 
-const work = () => {
+const Work = () => {
   const [project, setProject] = useState(projects[0]);
 
 
@@ -147,4 +147,4 @@ const work = () => {
   )
 }
 
-export default work
+export default Work
