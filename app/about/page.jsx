@@ -57,7 +57,7 @@ const experience = {
     },
     {
       company: "Phipps Henson McAllister",
-      Position: "Aritifial Intelligence Intern",
+      Position: "Artificial Intelligence Intern",
       duration: "Jul 2023 - Sept 2023",
     },
     {
