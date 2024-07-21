@@ -3,7 +3,7 @@ import Social from "@/components/ui/Social";
 import Stats from "@/components/ui/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
-
+//test123
 const Home = () => {
   return (
     <section className="h-full">
@@ -23,7 +23,7 @@ const Home = () => {
             size="lg"
             className="uppercase flex items-center gap-2"
             >
-              <span>Download CV</span>
+              <span>Projects</span>
               <FiDownload className="text-xl" />
             </Button>
             <div className="mb-8 xl:mb-0">
