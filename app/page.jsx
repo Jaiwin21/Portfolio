@@ -3,7 +3,7 @@ import Social from "@/components/ui/Social";
 import Stats from "@/components/ui/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
-//test123
+//test
 const Home = () => {
   return (
     <section className="h-full">
