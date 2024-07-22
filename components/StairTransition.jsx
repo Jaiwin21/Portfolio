@@ -20,7 +20,7 @@ const StairTransition = () => {
       >
         <Stairs />
       </motion.div>
-      
+
       {/* Separate animation for background fade effect */}
       <motion.div
         className="h-screen w-screen fixed bg-primary top-0 pointer-events-none z-30"
