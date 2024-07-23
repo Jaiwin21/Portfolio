@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import { FiDownload } from 'react-icons/fi';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 // Using dynamic imports
 const Photo = dynamic(() => import('@/components/ui/Photo'));
@@ -21,14 +22,16 @@ const Home = () => {
               Up and coming software engineering graduate who is seeking to leverage their knowledge with industry experience.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Projects</span>
-                <FiDownload className="text-xl" />
-              </Button>
+            <Link href="/project">
+            <Button
+              variant="outline"
+              size="lg"
+              className="uppercase flex items-center gap-2"
+            >
+              <span>Projects</span>
+              <FiDownload className="text-xl" />
+            </Button>
+          </Link>
               <div className="mb-8 xl:mb-0">
                 <Social containerStyles="flex gap-6" iconStyles="h-9 w-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500" />
               </div>
