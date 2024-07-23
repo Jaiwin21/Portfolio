@@ -13,26 +13,29 @@ import WorkSliderButtons from "@/components/ui/WorkSliderButtons";
 const projects = [
   {
     num: "01",
-    category: "Frontend",
+    name: "Stargram",
+    category: "Fullstack",
     title: "project 1",
+    description: "Stargram is a fullstack social media application designed specifically for space enthusiasts. It features a robust backend powered by Appwrite, an open-source platform that handles the heavy lifting typically required in conventional fullstack applications.",
+    stack: [{ name: "Tailwind" }, { name: "Typescript" }, { name: "ReactJs" }, { name: "ReactQuery" }],
+    image: "/star-home.png",
+    live: "",
+    github: "https://github.com/Jaiwin21/Stargram",
+  },
+  {
+    num: "02",
+    name: "Ripple",
+    category: "Frontend",
+    title: "project 2",
     description: "Ripple is a social media platform that mimics the likeness of Twitter. However, unlike Twitter, it aims to improve the quality of what is being posted as well as utilising AI to ensure the user is permitted to explore the platform. So far, the frontend is the only part that is complete.",
-    stack: [{ name: "HTML 5" }, { name: "Tailwind" }, { name: "React" }, { name: "NodeJs" }],
-    image: "/ripple.png",
+    stack: [{ name: "HTML 5" }, { name: "Tailwind" }, { name: "ReactJs" }, { name: "NodeJs" }],
+    image: "/ripple-home.png",
     live: "",
     github: "https://github.com/Jaiwin21/Ripple",
   },
   // {
-  //   num: "02",
-  //   category: "Frontend",
-  //   title: "project 2",
-  //   description: "Ripple is a social media platform that mimics the likeness of Twitter. However, unlike Twitter, it aims to improve the quality of what is being posted as well as utilising AI to ensure the user is permitted to explore the platform. So far, the frontend is the only part that is complete.",
-  //   stack: [{ name: "HTML 5" }, { name: "Tailwind" }, { name: "React" }, { name: "NodeJs" }],
-  //   image: "/ripple.png",
-  //   live: "",
-  //   github: "https://github.com/Jaiwin21/Ripple",
-  // },
-  // {
   //   num: "01",
+  //   name: "Ripple",
   //   category: "Frontend",
   //   title: "project 1",
   //   description: "Ripple is a social media platform that mimics the likeness of Twitter. However, unlike Twitter, it aims to improve the quality of what is being posted as well as utilising AI to ensure the user is permitted to explore the platform. So far, the frontend is the only part that is complete.",
@@ -73,7 +76,8 @@ const Work = () => {
               >
                 {project.num}
               </div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} project</h2>
+              <h2 className="text-[42px] font-bold leading-none group-hover:text-accent transition-all duration-500 capitalize text-accent">{project.name}</h2>
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} Project</h2>
               <p className="text-white/60">{project.description}</p>
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => (
