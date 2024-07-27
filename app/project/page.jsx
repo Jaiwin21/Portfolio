@@ -18,7 +18,7 @@ const projects = [
     title: "project 1",
     description: "Stargram is a fullstack social media application designed specifically for space enthusiasts. It features a robust backend powered by Appwrite, an open-source platform that handles the heavy lifting typically required in conventional fullstack applications.",
     stack: [{ name: "Tailwind" }, { name: "Typescript" }, { name: "ReactJs" }, { name: "ReactQuery" }],
-    image: "/star-home.png",
+    image: "/stargram-img.webp",
     live: "",
     github: "https://github.com/Jaiwin21/Stargram",
   },
@@ -29,7 +29,7 @@ const projects = [
     title: "project 2",
     description: "Ripple is a social media platform that mimics the likeness of Twitter. However, unlike Twitter, it aims to improve the quality of what is being posted as well as utilising AI to ensure the user is permitted to explore the platform. So far, the frontend is the only part that is complete.",
     stack: [{ name: "HTML 5" }, { name: "Tailwind" }, { name: "ReactJs" }, { name: "NodeJs" }],
-    image: "/ripple-home.png",
+    image: "/ripple-img.webp",
     live: "",
     github: "https://github.com/Jaiwin21/Ripple",
   },
@@ -115,11 +115,11 @@ const Work = () => {
                 <SwiperSlide key={index} className="w-full">
                   <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                    <div className="relative w-full h-full">
+                    <div className="w-full h-full border-4 border-[#00ff99] glow-border">
                       <Image 
                         src={project.image}
                         fill
-                        className="object-cover"
+                        className="object-cove"
                         alt={project.title}
                       />
                     </div>
