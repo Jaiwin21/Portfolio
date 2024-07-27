@@ -18,7 +18,7 @@ const projects = [
     title: "project 1",
     description: "Stargram is a fullstack social media application designed specifically for space enthusiasts. It features a robust backend powered by Appwrite, an open-source platform that handles the heavy lifting typically required in conventional fullstack applications.",
     stack: [{ name: "Tailwind" }, { name: "Typescript" }, { name: "ReactJs" }, { name: "ReactQuery" }],
-    image: "/star-home.png",
+    image: "/stargram-img.webp",
     live: "",
     github: "https://github.com/Jaiwin21/Stargram",
   },
@@ -29,7 +29,7 @@ const projects = [
     title: "project 2",
     description: "Ripple is a social media platform that mimics the likeness of Twitter. However, unlike Twitter, it aims to improve the quality of what is being posted as well as utilising AI to ensure the user is permitted to explore the platform. So far, the frontend is the only part that is complete.",
     stack: [{ name: "HTML 5" }, { name: "Tailwind" }, { name: "ReactJs" }, { name: "NodeJs" }],
-    image: "/ripple-home.png",
+    image: "/ripple-img.webp",
     live: "",
     github: "https://github.com/Jaiwin21/Ripple",
   },
@@ -111,21 +111,25 @@ const Work = () => {
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {projects.map((project, index) => (
-                <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                    <div className="relative w-full h-full">
-                      <Image 
-                        src={project.image}
-                        fill
-                        className="object-cover"
-                        alt={project.title}
-                      />
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
+{projects.map((project, index) => (
+  <SwiperSlide key={index} className="w-full">
+    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+      <div className="relative w-full h-full flex justify-center items-center">
+        <div className="relative w-full h-full">
+          <div className="absolute inset-0 border-4 border-[#00ff99] rounded-lg">
+            <Image 
+              src={project.image}
+              fill
+              className="object-cover rounded-lg"
+              alt={project.title}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </SwiperSlide>
+))}
               <WorkSliderButtons 
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
