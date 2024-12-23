@@ -2,6 +2,9 @@
 
 import { FaCss3, FaJs, FaReact, FaNodeJs, FaJava, FaPython } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiTypescript, SiSpringboot, SiAmazonaws } from "react-icons/si";
+import { BsFillGearFill } from 'react-icons/bs';
+import { FaAws } from 'react-icons/fa';
+
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -59,7 +62,7 @@ const skills = {
     { icon: <SiTailwindcss />, name: "Tailwind CSS" },
     { icon: <SiNextdotjs />, name: "NextJs" },
     { icon: <SiTypescript />, name: "Typescript" },
-    { icon: <SiAmazonaws />, name: "AWS" },
+    { icon: <FaAws />, name: "AWS" },
   ],
 };
 
