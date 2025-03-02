@@ -13,7 +13,7 @@ const Social = dynamic(() => import('@/components/ui/Social'));
 const Stats = dynamic(() => import('@/components/ui/Stats'));
 
 const Home = () => {
-  const words = ['AI', 'ML', 'Data']; // Words to cycle through
+  const words = ['Engineer', 'Solutions Architect', 'Consultant']; // Words to cycle through
   const [currentWord, setCurrentWord] = useState(0);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ const Home = () => {
               >
                 {words[currentWord]}
               </motion.span>{' '}
-              engineer who is seeking to leverage their knowledge with industry experience.
+               who is seeking to leverage their knowledge with industry experience.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Link href="/project">

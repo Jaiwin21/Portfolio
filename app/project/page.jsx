@@ -21,6 +21,7 @@ const projects = [
     image: "/errorlog.png",
     live: "",
     github: "https://github.com/Jaiwin21/Ripple",
+    live: "https://youtu.be/otE0Y8FgbnU",
   },
   {
     num: "02",
@@ -99,20 +100,43 @@ const Work = () => {
                 ))}
               </ul>
               <div className="border border-white/20"></div>
-              <div className="flex items-center gap-4">
-                <Link href={project.github} target="_blank" rel="noopener noreferrer">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github Repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+
+              {/* New section for clearer links */}
+              <div className="flex flex-wrap gap-4">
+                {project.github && (
+                  <Link 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-accent text-primary px-4 py-2 rounded-lg hover:bg-accent-hover transition"
+                  >
+                    View on GitHub
+                  </Link>
+                )}
+
+                {project.live && (
+                  <Link 
+                    href={project.live} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-accent text-primary px-4 py-2 rounded-lg hover:bg-accent-hover transition"
+                  >
+                    Live Demo
+                  </Link>
+                )}
+
+                {project.youtube && (
+                  <Link 
+                    href={project.youtube} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-accent text-primary px-4 py-2 rounded-lg hover:bg-accent-hover transition"
+                  >
+                    Watch on YouTube
+                  </Link>
+                )}
               </div>
+
             </div>
           </div>
           <div className="w-full xl:w-[50%]">
