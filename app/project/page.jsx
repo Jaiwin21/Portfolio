@@ -20,7 +20,6 @@ const projects = [
     stack: [{ name: "SNS" }, { name: "Kinesis" }, { name: "DynamoDB" }, { name: "S3" }, { name: "Lambda" }, { name: "Eventbridge" },],
     image: "/errorlog.png",
     live: "",
-    github: "https://github.com/Jaiwin21/Ripple",
     live: "https://youtu.be/otE0Y8FgbnU",
   },
   {
