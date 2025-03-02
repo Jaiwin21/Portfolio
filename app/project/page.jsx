@@ -11,11 +11,22 @@ import Image from "next/image";
 import WorkSliderButtons from "@/components/ui/WorkSliderButtons";
 
 const projects = [
-  {
+    {
     num: "01",
+    name: "Event Driven Architecture: Error logging and monitoring",
+    category: "Architecting",
+    title: "project 1",
+    description: "This event-driven log monitoring architecture enables real-time log processing, storage, and automated alerting using serverless AWS services. It efficiently handles high log volumes, ensuring instant error detection and response while supporting both real-time lookups and historical analysis. Designed for scalability and cost efficiency, it eliminates infrastructure overhead, providing a robust and automated monitoring solution for modern cloud applications.",
+    stack: [{ name: "SNS" }, { name: "Kinesis" }, { name: "DynamoDB" }, { name: "S3" }, { name: "Lambda" }, { name: "Eventbridge" },],
+    image: "/errorlog.png",
+    live: "",
+    github: "https://github.com/Jaiwin21/Ripple",
+  },
+  {
+    num: "02",
     name: "Stargram",
     category: "Fullstack",
-    title: "project 1",
+    title: "project 2",
     description: "Stargram is a fullstack social media application designed specifically for space enthusiasts. It features a robust backend powered by Appwrite, an open-source platform that handles the heavy lifting typically required in conventional fullstack applications.",
     stack: [{ name: "Tailwind" }, { name: "Typescript" }, { name: "ReactJs" }, { name: "ReactQuery" }],
     image: "/stargram.png",
@@ -23,10 +34,10 @@ const projects = [
     github: "https://github.com/Jaiwin21/Stargram",
   },
   {
-    num: "02",
+    num: "03",
     name: "Ripple",
     category: "Frontend",
-    title: "project 2",
+    title: "project 3",
     description: "Ripple is a social media platform that mimics the likeness of Twitter. However, unlike Twitter, it aims to improve the quality of what is being posted as well as utilising AI to ensure the user is permitted to explore the platform. So far, the frontend is the only part that is complete.",
     stack: [{ name: "HTML 5" }, { name: "Tailwind" }, { name: "ReactJs" }, { name: "NodeJs" }],
     image: "/ripple.png",
