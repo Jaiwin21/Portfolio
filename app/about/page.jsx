@@ -19,7 +19,7 @@ const about = {
     { fieldName: "Name", fieldValue: "Jaiwin Prince" },
     { fieldName: "Phone", fieldValue: "+44 7475567756" },
     { fieldName: "Nationality", fieldValue: "British" },
-    { fieldName: "Email", fieldValue: "Jaiwinprince21@hotmail.com" },
+    { fieldName: "Email", fieldValue: "Jaiwinprince@outlook.com" },
     { fieldName: "Languages", fieldValue: "English Tamil French" },
     { fieldName: "Location", fieldValue: "England, UK" },
   ],
